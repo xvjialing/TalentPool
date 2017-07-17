@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.xvjialing.administrator.talentpool.ac.ActivityRecentVisitor">
+
+    <RelativeLayout
+        android:id="@+id/ac_recentVisitor_rl_titlebar"
+        style="@style/titleBar">
+
+        <ImageView
+            android:id="@+id/ac_recentVisitor_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_left_arrow" />
+
+        <TextView
+            android:id="@+id/ac_recentVisitor_tv_titlebar"
+            style="@style/titleText"
+            android:text="最近来访"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ac_recentVisitor_ll_noData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/not_found" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="最近没有人来访！"
+            android:textColor="@color/obj_on"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

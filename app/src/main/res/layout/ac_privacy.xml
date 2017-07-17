@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:clickable="false"
+    android:orientation="vertical"
+    tools:context="com.xvjialing.administrator.talentpool.ac.ActivityPrivacy">
+
+    <RelativeLayout
+        android:id="@+id/ac_privacy_rl_titlebar"
+        style="@style/titleBar">
+
+        <ImageView
+            android:id="@+id/ac_privacy_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_left_arrow" />
+
+        <TextView
+            android:id="@+id/ac_privacy_tv_titlebar"
+            style="@style/titleText"
+            android:text="隐私设置" />
+    </RelativeLayout>
+
+
+    <RelativeLayout style="@style/fg_me_rl">
+
+        <TextView
+            android:id="@+id/ac_privacy_tv_anonymous"
+            style="@style/fg_me_rl_tv"
+            android:text="简历匿名" />
+
+        <Switch
+            android:id="@+id/ac_privacy_switch_anonymous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:checked="false" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:lineSpacingExtra="3dp"
+        android:text="开启简历匿名后，企业主动搜索您的简历时，你的姓名显示类似为“王XX”" />
+
+    <RelativeLayout style="@style/fg_me_rl">
+
+        <TextView
+            android:id="@+id/ac_privacy_tv_closeResume"
+            style="@style/fg_me_rl_tv"
+            android:text="关闭简历" />
+
+        <Switch
+            android:id="@+id/ac_privacy_switch_closeResume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:lineSpacingExtra="3dp"
+        android:text="关闭简历后，企业不能主动搜索到您的简历，但您仍可以投递简历" />
+
+    <RelativeLayout style="@style/fg_me_rl">
+
+        <TextView
+            android:id="@+id/ac_privacy_tv_hiddenContacts"
+            style="@style/fg_me_rl_tv"
+            android:text="隐藏联系方式" />
+
+        <Switch
+            android:id="@+id/ac_privacy_switch_hiddenContacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:lineSpacingExtra="3dp"
+        android:text="隐藏联系方式后，企业不能看到您简历的联系方式" />
+
+</LinearLayout>

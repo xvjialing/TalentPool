@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.xvjialing.administrator.talentpool.ac.ActivitySearchFriend">
+
+    <RelativeLayout
+        android:id="@+id/search_main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/background"
+        android:elevation="4dp"
+        android:gravity="center">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/search_case"
+            android:hint="请输入文字"
+            android:paddingLeft="10dp"
+            android:textColor="@color/font_gray_drak"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/ac_searchFriend_img_search"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/search_icon_contacts"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/ac_searchFriend_lv_firend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:dividerHeight="3dp"
+        android:visibility="gone"></ListView>
+
+
+
+</LinearLayout>

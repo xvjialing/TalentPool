@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.xvjialing.administrator.talentpool.fg.FragmentMessage">
+
+    <RelativeLayout
+        android:id="@+id/rl_fg_message_titlebar"
+        style="@style/titleBar">
+
+        <TextView
+            android:id="@+id/fg_message_titletext"
+            style="@style/titleText"
+            android:text="@string/message"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_message_systemMessage"
+        style="@style/message_ll"
+        android:background="@drawable/item_pressed"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/img_message_systemMessage"
+            style="@style/message_ll_img"
+            android:src="@drawable/system_message" />
+
+        <TextView
+            android:id="@+id/tv_message_systemMessage"
+            style="@style/message_ll_tv"
+            android:text="系统消息" />
+
+        <ImageView
+            android:id="@+id/fg_message_img_systemMessage_redPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="215dp"
+            android:src="@drawable/red_point"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/horizontal_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_message_visit"
+        style="@style/message_ll"
+        android:background="@drawable/item_pressed"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/img_message_visit"
+            style="@style/message_ll_img"
+            android:src="@drawable/message_visit"/>
+
+        <TextView
+            android:id="@+id/tv_message_visit"
+            style="@style/message_ll_tv"
+            android:text="@string/message_tv_visit"/>
+    </LinearLayout>
+
+    <include layout="@layout/horizontal_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_message_interst"
+        style="@style/message_ll"
+        android:background="@drawable/item_pressed"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/img_message_interst"
+            style="@style/message_ll_img"
+            android:src="@drawable/message_interst"/>
+
+        <TextView
+            android:id="@+id/tv_message_interst"
+            style="@style/message_ll_tv"
+            android:text="@string/message_tv_interst"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_message_feedback"
+        style="@style/message_ll"
+        android:background="@drawable/item_pressed"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_message_feedback"
+            style="@style/message_ll_img"
+            android:src="@drawable/message_feedback"/>
+
+        <TextView
+            android:id="@+id/tv_message_feedback"
+            style="@style/message_ll_tv"
+            android:text="@string/message_ll_tv_feedback"/>
+    </LinearLayout>
+
+    <include layout="@layout/horizontal_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_message_interview"
+        style="@style/message_ll"
+        android:background="@drawable/item_pressed"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/img_message_interview"
+            style="@style/message_ll_img"
+            android:src="@drawable/message_interview"/>
+
+        <TextView
+            android:id="@+id/tv_message_interview"
+            style="@style/message_ll_tv"
+            android:text="@string/message_ll_tv_interview"/>
+    </LinearLayout>
+
+    <include layout="@layout/horizontal_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp" />
+
+
+</LinearLayout>

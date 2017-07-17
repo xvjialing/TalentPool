@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.xvjialing.administrator.talentpool.ac.ActivityInterestMe">
+
+    <RelativeLayout
+        android:id="@+id/ac_interestMe_rl_titlebar"
+        style="@style/titleBar">
+
+        <ImageView
+            android:id="@+id/ac_interestMe_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_left_arrow" />
+
+        <TextView
+            android:id="@+id/ac_interestMe_tv_titlebar"
+            style="@style/titleText"
+            android:text="@string/interest_for_me"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ac_interestMe_ll_noData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/not_found" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="还没有人对你感兴趣！"
+            android:textColor="@color/obj_on"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!--<ListView-->
+    <!--android:id="@+id/ac_interestMe_lv_recommend"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scrollbars="none"></ListView>-->
+
+</LinearLayout>

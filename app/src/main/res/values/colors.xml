@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#2d9fff</color>
+    <color name="light_blue">#abd6fa</color>
+    <color name="red">#FF0000</color>
+    <color name="obj_on">#2d9fff</color>
+    <color name="obj">#c3c5cf</color>
+    <color name="divider">#ffdfe0df</color>
+    <color name="background">#f0f1f5</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#999999</color>
+    <color name="black">#000000</color>
+    <color name="font_gray_drak">#ff565a5c</color>
+    <color name="schedulehead_color">#fffafafa</color>
+    <color name="orange">#ff8b26</color>
+    <color name="pickerview_timebtn_nor">#057dff</color>
+    <color name="pickerview_timebtn_pre">#c2daf5</color>
+    <color name="pickerview_bg_topbar">#f5f5f5</color>
+    <color name="pickerview_topbar_title">#000000</color>
+    <color name="pickerview_wheelview_textcolor_out">#a8a8a8</color>
+    <color name="pickerview_wheelview_textcolor_center">#2a2a2a</color>
+    <color name="pickerview_wheelview_textcolor_divider">#d5d5d5</color>
+    <!--覆盖颜色-->
+    <color name="bgColor_overlay">#60000000</color>
+    <color name="user_list_public_bg">#e5e6e7</color>
+</resources>

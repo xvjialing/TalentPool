@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xvjialing.administrator.talentpool.ac.ActivityAddBole">
+
+    <RelativeLayout
+        android:id="@+id/ac_bole_rl_titlebar"
+        style="@style/titleBar">
+
+        <ImageView
+            android:id="@+id/ac_bole_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_left_arrow" />
+
+        <TextView
+            android:id="@+id/ac_bole_tv_titlebar"
+            style="@style/titleText"
+            android:text="添加伯乐" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout style="@style/ac_resume_ll">
+
+        <TextView
+            android:id="@+id/ac_bole_tv_boleName"
+            style="@style/ac_resume_tv"
+            android:text="证明人" />
+
+        <EditText
+            android:id="@+id/ac_bole_et_boleName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:layout_marginRight="20dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/divider" />
+
+    <LinearLayout style="@style/ac_resume_ll">
+
+        <TextView
+            android:id="@+id/ac_bole_tv_relation"
+            style="@style/ac_resume_tv"
+            android:text="证明人" />
+
+        <Spinner
+            android:id="@+id/ac_bole_sp_relation"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:background="@null"></Spinner>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/divider" />
+
+    <LinearLayout style="@style/ac_resume_ll">
+
+        <TextView
+            android:id="@+id/ac_bole_tv_phone"
+            style="@style/ac_resume_tv"
+            android:text="联系电话" />
+
+        <EditText
+            android:id="@+id/ac_bole_et_phone"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:inputType="phone"
+            android:maxLength="11" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/divider" />
+
+    <Button
+        android:id="@+id/ac_bole_btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/obj_on"
+        android:text="提交"
+        android:textColor="@color/white" />
+</LinearLayout>

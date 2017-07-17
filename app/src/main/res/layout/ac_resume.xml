@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.xvjialing.administrator.talentpool.ac.ActivityResume">
+
+    <RelativeLayout
+        android:id="@+id/ac_resume_titlebar"
+        style="@style/titleBar">
+
+        <ImageView
+            android:id="@+id/ac_resume_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_left_arrow" />
+
+        <TextView
+            android:id="@+id/ac_resume_titletext"
+            style="@style/titleText"
+            android:text="简历编辑"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--基本信息-->
+            <RelativeLayout
+                android:id="@+id/ac_resume_rl_avater"
+                style="@style/ac_resume_rl">
+
+                <LinearLayout
+                    android:id="@+id/ac_resume_ll_editBasicInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ac_resume_img_editBasicInfo"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/icon_edit" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="编辑"
+                        android:textColor="@color/obj_on" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ac_resume_ll_basicInfo_avater"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ac_resume_img_avater"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/message_visit" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="点击更换"
+                        android:textColor="@color/obj_on"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ac_resume_tv_completeBasicInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="+请完善期望工作"
+                    android:textColor="@color/obj_on"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ac_resume_ll_basicInfo_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/ac_resume_ll_basicInfo_avater"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+                        <TextView
+                            android:id="@+id/ac_resume_tv_userName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="用户名"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/ac_resume_img_sex"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="5dp"
+                            android:src="@drawable/icon_male" />
+
+                        <TextView
+                            android:id="@+id/ac_resume_tv_phoneNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="12346578389"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/ac_resume_tv_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="地址"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:text="|" />
+                        <TextView
+                            android:id="@+id/ac_resume_tv_workLength"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="工作年限"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/ac_resume_tv_rencentStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="现在的工作状态"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ac_resume_tv_wishJob"
+                    style="@style/ac_resume_title_tv"
+                    android:text="期望工作"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/radius_rectangle_bitian"
+                    android:padding="5dp"
+                    android:text="必填"
+                    android:textColor="@color/red"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!--期望工作-->
+            <RelativeLayout
+                android:id="@+id/ac_resume_rl_wishJob"
+                style="@style/ac_resume_rl">
+
+                <LinearLayout
+                    android:id="@+id/ac_resume_ll_editwishJob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ac_resume_img_editwishJob"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/icon_edit" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="编辑"
+                        android:textColor="@color/obj_on" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/ac_resume_tv_completeWishJob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="+请完善期望工作"
+                    android:textColor="@color/obj_on"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ac_resume_ll_wishJob_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/ac_resume_tv_wishJobNameTitle"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:text="期望工作"/>
+
+                        <TextView
+                            android:id="@+id/ac_resume_tv_wishJobName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="期望工作名称"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/ac_resume_tv_wishLocationTitle"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:text="期望地点"/>
+
+                        <TextView
+                            android:id="@+id/ac_resume_tv_wishLocation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="期望工作地点"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/ac_resume_tv_wishSalaryTitle"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:text="期望月薪"/>
+
+                        <TextView
+                            android:id="@+id/ac_resume_tv_wishSalary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="n~m k/月"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ac_resume_tv_educateExperience"
+                    style="@style/ac_resume_title_tv"
+                    android:text="教育经历"/>
+            </LinearLayout>
+
+            <!--教育经历-->
+            <RelativeLayout
+                android:id="@+id/ac_resume_rl_EducateExperience"
+                style="@style/ac_resume_rl">
+
+                <LinearLayout
+                    android:id="@+id/ac_resume_ll_editEducate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ac_resume_img_editEducate"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/icon_edit" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="编辑"
+                        android:textColor="@color/obj_on" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/ac_resume_tv_completeEducateExperience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="+请完善教育经历"
+                    android:textColor="@color/obj_on"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+                <ListView
+                    android:id="@+id/ac_resume_lv_EducateExperience"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:divider="@null"
+                    android:clickable="false"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ac_resume_tv_workExpeience"
+                    style="@style/ac_resume_title_tv"
+                    android:text="工作经历"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/radius_rectangle_bitian"
+                    android:padding="5dp"
+                    android:text="必填"
+                    android:textColor="@color/red"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!--工作经历-->
+            <RelativeLayout
+                android:id="@+id/ac_resume_rl_workExpeience"
+                style="@style/ac_resume_rl">
+
+                <TextView
+                    android:id="@+id/ac_resume_tv_completeWorkExpeience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="+请完善工作经历"
+                    android:textColor="@color/obj_on"
+                    android:textSize="20sp"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/ac_resume_ll_editworkExperience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ac_resume_img_editworkExperience"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/icon_edit" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="编辑"
+                        android:textColor="@color/obj_on" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/ac_resume_lv_workExperience"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:divider="@null"
+                    android:clickable="false"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ac_resume_tv_projectExpeience"
+                    style="@style/ac_resume_title_tv"
+                    android:text="项目经历"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/radius_rectangle_bitian"
+                    android:padding="5dp"
+                    android:text="必填"
+                    android:textColor="@color/red"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <!--项目经历-->
+            <RelativeLayout
+                android:id="@+id/ac_resume_rl_projectExpeience"
+                style="@style/ac_resume_rl">
+
+                <TextView
+                    android:id="@+id/ac_resume_tv_completeProjectExpeience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="+请完善项目经历"
+                    android:textColor="@color/obj_on"
+                    android:textSize="20sp"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:id="@+id/ac_resume_ll_editProjectExpeience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ac_resume_img_editProjectExpeience"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:src="@drawable/icon_edit" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="编辑"
+                        android:textColor="@color/obj_on" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/ac_resume_lv_ProjectExpeience"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:divider="@null"
+                    android:clickable="false"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

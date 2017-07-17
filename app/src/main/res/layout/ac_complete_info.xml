@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.xvjialing.administrator.talentpool.ac.ActivityCompleteInfo">
+
+    <RelativeLayout
+        android:id="@+id/ac_completeInfo_titlebar"
+        style="@style/titleBar">
+
+
+        <TextView
+            android:id="@+id/ac_completeInfo_titletext"
+            style="@style/titleText"
+            android:text="完善信息" />
+
+    </RelativeLayout>
+
+    <LinearLayout style="@style/ac_resume_ll">
+
+        <TextView
+            android:id="@+id/ac_completeInfo_tv_name"
+            style="@style/ac_resume_tv"
+            android:text="真实姓名" />
+
+        <EditText
+            android:id="@+id/ac_completeInfo_et_name"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:background="@null" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/divider" />
+
+    <LinearLayout style="@style/ac_resume_ll">
+
+        <TextView
+            android:id="@+id/ac_completeInfo_tv_sex"
+            style="@style/ac_resume_tv"
+            android:text="性别" />
+
+        <RadioGroup
+            android:id="@+id/ac_completeInfo_rg_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/ac_completeInfo_rb_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="男" />
+
+            <RadioButton
+                android:id="@+id/ac_completeInfo_rb_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="女" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/divider" />
+
+    <LinearLayout style="@style/ac_resume_ll">
+
+        <TextView
+            android:id="@+id/ac_completeInfo_tv_phoneNumber"
+            style="@style/ac_resume_tv"
+            android:text="联系电话" />
+
+        <EditText
+            android:id="@+id/ac_completeInfo_et_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:background="@null"
+            android:inputType="phone"
+            android:maxLength="11" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/divider" />
+
+    <LinearLayout style="@style/ac_resume_ll">
+
+        <TextView
+            android:id="@+id/ac_completeInfo_tv_location"
+            style="@style/ac_resume_tv"
+            android:text="所在地" />
+
+        <TextView
+            android:id="@+id/ac_completeInfo_tv_location1"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="请选择地点" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/divider" />
+
+    <LinearLayout style="@style/ac_resume_ll">
+
+        <TextView
+            android:id="@+id/ac_completeInfo_tv_workLength"
+            style="@style/ac_resume_tv"
+            android:text="工作年限" />
+
+        <Spinner
+            android:id="@+id/ac_completeInfo_sp_workLength"
+            android:layout_width="130dp"
+            android:layout_height="40dp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/divider" />
+
+    <LinearLayout style="@style/ac_resume_ll">
+
+        <TextView
+            android:id="@+id/ac_resume_basicInfo_tv_rencentStatus"
+            style="@style/ac_resume_tv"
+            android:text="当前状态" />
+
+        <Spinner
+            android:id="@+id/ac_completeInfo_sp_rencentStatus"
+            android:layout_width="200dp"
+            android:layout_height="40dp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/divider" />
+
+    <Button
+        android:id="@+id/ac_completeInfo_btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/obj_on"
+        android:text="提交"
+        android:textColor="@color/white" />
+</LinearLayout>

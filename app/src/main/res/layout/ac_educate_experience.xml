@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.xvjialing.administrator.talentpool.ac.ActivityEducateExperience">
+
+    <RelativeLayout
+        android:id="@+id/ac_educateExperience_titlebar"
+        style="@style/titleBar">
+
+        <ImageView
+            android:id="@+id/ac_educateExperience_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_left_arrow" />
+
+        <TextView
+            android:id="@+id/ac_educateExperience_titletext"
+            style="@style/titleText"
+            android:text="@string/educate_experince"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/ac_resume_ll">
+
+        <TextView
+            android:id="@+id/ac_educateExperience_tv_schoolName"
+            style="@style/ac_resume_tv"
+            android:text="@string/school_name" />
+
+        <EditText
+            android:id="@+id/ac_educateExperience_et_schoolName"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_height="40dp"
+            android:background="@null" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/divider"/>
+
+    <LinearLayout
+        style="@style/ac_resume_ll">
+
+        <TextView
+            android:id="@+id/ac_educateExperience_tv_MajorName"
+            style="@style/ac_resume_tv"
+            android:text="@string/major_name" />
+
+        <EditText
+            android:id="@+id/ac_educateExperience_et_MajorName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/divider"/>
+
+    <LinearLayout
+        style="@style/ac_resume_ll">
+        <TextView
+            android:id="@+id/ac_educateExperience_tv_degree"
+            style="@style/ac_resume_tv"
+            android:text="@string/degree" />
+
+        <Spinner
+            android:id="@+id/ac_educateExperience_sp_degree"
+            android:layout_width="130dp"
+            android:layout_height="40dp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/divider"/>
+
+    <LinearLayout
+        style="@style/ac_resume_ll">
+        <TextView
+            style="@style/ac_resume_tv"
+            android:text="@string/educate_time" />
+
+        <TextView
+            android:id="@+id/ac_educateExperience_tv_educateStartTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/educate_start_time"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/divider"/>
+
+    <LinearLayout
+        style="@style/ac_resume_ll">
+        <TextView
+            style="@style/ac_resume_tv"
+            android:text="@string/graduate_time" />
+
+        <TextView
+            android:id="@+id/ac_educateExperience_tv_educateEndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/graduate_time"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ac_educateExperience_btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/obj_on"
+        android:text="@string/submit"
+        android:textColor="@color/white" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xvjialing.administrator.talentpool.fg.FragmentCompanyDeatiJob">
+
+    <ListView
+        android:id="@+id/fg_companyDetailJob_lv_job"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:divider="@null"
+        android:dividerHeight="6dp"
+        android:scrollbars="none"></ListView>
+
+</FrameLayout>

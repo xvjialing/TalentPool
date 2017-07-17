@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context="com.xvjialing.administrator.talentpool.ac.ActivityFriendSetting">
+
+    <RelativeLayout
+        android:id="@+id/ac_friendSetting_rl_titlebar"
+        style="@style/titleBar">
+
+        <ImageView
+            android:id="@+id/ac_friendSetting_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_left_arrow" />
+
+        <TextView
+            android:id="@+id/ac_friendSetting_tv_titlebar"
+            style="@style/titleText"
+            android:text="资料设置" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ac_friendSetting_rl_ignore"
+        style="@style/fg_me_rl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/item_pressed"
+            android:text="不看他的动态"
+            android:textSize="18sp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开后你将无法看到对方的动态"
+        android:layout_margin="15dp"
+        android:textSize="15sp"/>
+
+    <RelativeLayout
+        android:id="@+id/ac_friendSetting_rl_blackList"
+        style="@style/fg_me_rl">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/item_pressed"
+            android:text="将对方加入黑名单"
+            android:textSize="18sp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开后双方都将将无法看到对方的职业背景和发消息"
+        android:layout_margin="15dp"
+        android:textSize="15sp"/>
+</LinearLayout>

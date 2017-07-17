@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ac_resume_rl">
+
+
+    <LinearLayout
+        android:id="@+id/item_ll_editProjectExpeience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/item_img_editProjectExpeience"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/icon_edit" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="编辑"
+            android:textColor="@color/obj_on" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/item_ll_projectExpeience_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ac_resume_tv_pojectNameTitle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="项目名称"/>
+
+            <TextView
+                android:id="@+id/ac_resume_tv_projectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="项目的名称"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ac_resume_tv_projectRoleTitle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="项目角色"/>
+
+            <TextView
+                android:id="@+id/ac_resume_tv_projectRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="项目的角色"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ac_resume_tv_referenceTitle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="证明人"/>
+
+            <TextView
+                android:id="@+id/ac_resume_tv_reference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击查看"
+                android:textColor="@color/obj_on"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ac_resume_tv_timeTitle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="项目时间"/>
+
+            <TextView
+                android:id="@+id/ac_resume_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="项目的时间"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ac_resume_tv_companyTitle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="公司名称"/>
+
+            <TextView
+                android:id="@+id/ac_resume_tv_company"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公司的名称"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ac_resume_ll_reference2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/ac_resume_tv_referenceTitle2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="证明人2" />
+
+            <TextView
+                android:id="@+id/ac_resume_tv_reference2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XXX  17875843930" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ac_resume_ll_reference3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/ac_resume_tv_referenceTitle3"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="证明人3" />
+
+            <TextView
+                android:id="@+id/ac_resume_tv_reference3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XXX 同事 17875843930" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ac_resume_tv_skillTitle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="所用技能" />
+
+            <TextView
+                android:id="@+id/ac_resume_tv_skill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="所用的技能" />
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_marginTop="15dp">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/ac_resume_tv_projectTimeTitle"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="项目时间"/>-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/ac_resume_tv_projectTime"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="项目的时间"/>-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ac_resume_tv_projectDescriptionTitle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="项目描述"/>
+
+            <TextView
+                android:id="@+id/ac_resume_tv_projectDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="项目的描述"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_img_deleteProject"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        android:clickable="true"/>
+</RelativeLayout>

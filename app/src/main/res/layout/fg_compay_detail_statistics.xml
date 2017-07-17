@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.xvjialing.administrator.talentpool.fg.FragmentCompayDetailStatistics">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="员工学历分布" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/fg_company_piechart_statistics_degree"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="职位分布" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/fg_company_piechart_statistics_position"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+</LinearLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context="com.xvjialing.administrator.talentpool.ac.ActivityFeedback">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ac_feedBack_rl_titlebar"
+            style="@style/titleBar">
+
+            <ImageView
+                android:id="@+id/ac_feedBack_img_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/icon_left_arrow" />
+
+            <TextView
+                android:id="@+id/ac_feedBack_tv_titlebar"
+                style="@style/titleText"
+                android:text="人才反馈" />
+        </RelativeLayout>
+
+        <LinearLayout
+            style="@style/ac_resume_ll">
+
+            <TextView
+                android:id="@+id/ac_feedBack_tv_companyName"
+                style="@style/ac_resume_tv"
+                android:text="公司名称" />
+
+            <EditText
+                android:id="@+id/ac_feedBack_et_companyName"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_height="40dp"
+                android:background="@null" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/divider"/>
+
+        <LinearLayout
+            style="@style/ac_resume_ll">
+
+            <TextView
+                android:id="@+id/ac_feedBack_tv_companyDevelop"
+                style="@style/ac_resume_tv"
+                android:text="企业成长" />
+
+            <RatingBar
+                android:id="@+id/ac_feedBack_et_companyDevelop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/divider"/>
+
+        <LinearLayout
+            style="@style/ac_resume_ll">
+
+            <TextView
+                android:id="@+id/ac_feedBack_tv_skillDevelop"
+                style="@style/ac_resume_tv"
+                android:text="技能成长" />
+
+            <RatingBar
+                android:id="@+id/ac_feedBack_et_skillDevelop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/divider"/>
+
+        <LinearLayout
+            style="@style/ac_resume_ll">
+
+            <TextView
+                android:id="@+id/ac_feedBack_tv_workEnvironment"
+                style="@style/ac_resume_tv"
+                android:text="工作环境" />
+
+            <RatingBar
+                android:id="@+id/ac_feedBack_et_workEnvironment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/divider"/>
+
+        <LinearLayout
+            style="@style/ac_resume_ll">
+
+            <TextView
+                android:id="@+id/ac_feedBack_tv_workingPressure"
+                style="@style/ac_resume_tv"
+                android:text="工作压力" />
+
+            <RatingBar
+                android:id="@+id/ac_feedBack_et_workingPressure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/divider"/>
+
+        <LinearLayout
+            style="@style/ac_resume_ll">
+
+            <TextView
+                android:id="@+id/ac_feedBack_tv_companyFuture"
+                style="@style/ac_resume_tv"
+                android:text="公司前景" />
+
+            <RatingBar
+                android:id="@+id/ac_feedBack_et_companyFuture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/divider"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ac_feedBack_btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/obj_on"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

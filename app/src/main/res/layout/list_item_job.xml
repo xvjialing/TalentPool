@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:id="@+id/item_job_ll_whole"
+    android:background="@drawable/radius_rectangle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/item_job_tv_jobName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="java软件工程师"
+            android:textColor="@color/obj_on"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/item_job_tv_publishingTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="time"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/item_job_tv_salary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:text="￥ 5k-9k"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/location"/>
+
+        <TextView
+            android:id="@+id/item_job_tv_locaion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:text="杭州" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/job_experience"/>
+
+        <TextView
+            android:id="@+id/item_job_tv_workLength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:text="1年" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/degree"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/item_job_tv_degree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:text="本科" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:layout_marginTop="5dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/item_job_tv_companyLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/company"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/item_job_tv_companyLogo">
+
+            <TextView
+                android:id="@+id/item_job_tv_companyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邦德物流"
+                android:layout_marginLeft="20dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/item_job_tv_companySize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公司规模:100-499人"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

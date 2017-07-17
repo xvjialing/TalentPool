@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">TalentPool</string>
+    <string name="userPhone">用户电话</string>
+    <string name="chance">机会</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">首页</string>
+    <string name="connection">人脉</string>
+    <string name="message">消息</string>
+    <string name="me">我</string>
+    <string name="message_tv_visit">最近来访</string>
+    <string name="message_tv_interst">对我感兴趣</string>
+    <string name="message_ll_tv_feedback">投递反馈</string>
+    <string name="message_ll_tv_interview">面试邀请</string>
+    <string name="companyDescription">华东勘测研究院（简称华东院）是中国水电工程顾问集团公司直属的大型综合性</string>
+    <string name="job_descrip">cavasdvasdddddddddddddddddddddddddddd</string>
+    <string name="companyDetail">公司详情</string>
+    <string name="contacts_zhixiang">智翔人脉</string>
+    <string name="it">IT</string>
+    <string name="divider">|</string>
+    <string name="shanghai">上海</string>
+    <string name="description">介绍</string>
+    <string name="position">职位</string>
+    <string name="eveluate">评价</string>
+    <string name="statistic">统计</string>
+    <string name="tab">tab</string>
+    <string name="deliver_feedback">投递反馈</string>
+    <string name="educate_experince">教育经历</string>
+    <string name="school_name">学校名称</string>
+    <string name="major_name">专业名称</string>
+    <string name="degree">学历</string>
+    <string name="educate_time">就读时间</string>
+    <string name="educate_start_time">开始时间</string>
+    <string name="graduate_time">毕业时间</string>
+    <string name="submit">提交</string>
+    <string name="interest_for_me">已对我感兴趣</string>
+    <string name="interview_invite">面试邀请</string>
+    <string name="position_details">职位详情</string>
+    <string name="developer">开发工程师</string>
+    <string name="_10k_15k">【10k-15k】</string>
+    <string name="hangzhou">杭州</string>
+    <string name="one_year">1年</string>
+    <string name="degree_benke">本科</string>
+    <string name="welfare_wuxianyijing">福利：五险一金</string>
+    <string name="one_company_name">恒宝股份有限公司</string>
+    <string name="position_description">职位描述</string>
+    <string name="add_to_collection">添加收藏</string>
+    <string name="deliver_immediately">立即投递</string>
+    <string name="username">用户名</string>
+    <string name="pwd">密码</string>
+    <string name="feedback">意见反馈</string>
+    <string name="no_data">没有数据</string>
+    <string name="aboutUs">关于我们</string>
+    <string name="talentPool">企业人才共享池</string>
+
+</resources>

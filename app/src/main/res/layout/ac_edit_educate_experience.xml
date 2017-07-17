@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.xvjialing.administrator.talentpool.ac.ActivityEditEducateExperience">
+
+    <RelativeLayout
+        android:id="@+id/ac_editEducateExperience_rl_titlebar"
+        style="@style/titleBar">
+
+        <ImageView
+            android:id="@+id/ac_editEducateExperience_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_left_arrow" />
+
+        <TextView
+            android:id="@+id/ac_editEducateExperience_tv_titlebar"
+            style="@style/titleText"
+            android:text="教育经历" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ac_editEducateExperience_btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/obj_on"
+        android:layout_alignParentBottom="true"
+        android:text="+添加新的教育经历"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/ac_editEducateExperience_lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ac_editEducateExperience_rl_titlebar"
+        android:layout_above="@id/ac_editEducateExperience_btn_add"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:divider="@null"
+        android:dividerHeight="3dp"/>
+
+
+</RelativeLayout>

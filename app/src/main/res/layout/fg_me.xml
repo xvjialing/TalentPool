@@ -1,0 +1,264 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.xvjialing.administrator.talentpool.fg.FragmentMe">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/obj_on"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/fg_me_img_avater"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/me_avater"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="3dp" />
+
+            <TextView
+                android:id="@+id/fg_me_tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="用户名"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/fg_me_tv_recent_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="当前状态"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/fg_me_rl_resume"
+            style="@style/fg_me_rl"
+            android:background="@drawable/item_pressed"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/fg_me_img_resume"
+                style="@style/fg_me_rl_img"
+                android:src="@drawable/fg_me_resume"/>
+
+            <TextView
+                android:id="@+id/fg_me_tv_resume"
+                style="@style/fg_me_rl_tv"
+                android:layout_toRightOf="@+id/fg_me_img_resume"
+                android:text="我的简历" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_right_arrow" />
+
+            <ImageView
+                android:id="@+id/fg_me_img_resume_redPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/red_point"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/fg_me_inc_divider1"
+            layout="@layout/horizontal_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="70dp" />
+
+        <RelativeLayout
+            android:id="@+id/fg_me_rl_collection"
+            style="@style/fg_me_rl"
+            android:background="@drawable/item_pressed"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/fg_me_img_collection"
+                style="@style/fg_me_rl_img"
+                android:src="@drawable/message_interst"/>
+
+            <TextView
+                android:id="@+id/fg_me_tv_collection"
+                style="@style/fg_me_rl_tv"
+                android:layout_toRightOf="@+id/fg_me_img_collection"
+                android:text="职位收藏" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_right_arrow" />
+
+        </RelativeLayout>
+
+        <include
+            layout="@layout/horizontal_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="70dp" />
+
+        <RelativeLayout
+            android:id="@+id/fg_me_rl_qualityTest"
+            style="@style/fg_me_rl"
+            android:background="@drawable/item_pressed"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/fg_me_img_qualityTest"
+                style="@style/fg_me_rl_img"
+                android:src="@drawable/me_quality_test" />
+
+            <TextView
+                android:id="@+id/fg_me_tv_qualityTest"
+                style="@style/fg_me_rl_tv"
+                android:layout_toRightOf="@+id/fg_me_img_qualityTest"
+                android:text="自我测评" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_right_arrow" />
+
+            <ImageView
+                android:id="@+id/fg_me_img_qualityTest_redPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/red_point"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <include
+        android:id="@+id/fg_me_inc_divider1"
+        layout="@layout/horizontal_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/fg_me_rl_setting"
+            style="@style/fg_me_rl"
+            android:background="@drawable/item_pressed"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/fg_me_img_setting"
+                style="@style/fg_me_rl_img"
+                android:src="@drawable/fg_me_setting"/>
+
+            <TextView
+                android:id="@+id/fg_me_tv_setting"
+                style="@style/fg_me_rl_tv"
+                android:layout_toRightOf="@+id/fg_me_img_setting"
+                android:text="设置" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_right_arrow" />
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/fg_me_inc_divider1"
+            layout="@layout/horizontal_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="70dp" />
+
+        <RelativeLayout
+            android:id="@+id/fg_me_rl_suggestion"
+            style="@style/fg_me_rl"
+            android:background="@drawable/item_pressed"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/fg_me_img_suggestion"
+                style="@style/fg_me_rl_img"
+                android:src="@drawable/fg_me_suggestion"/>
+
+            <TextView
+                android:id="@+id/fg_me_tv_suggestion"
+                style="@style/fg_me_rl_tv"
+                android:layout_toRightOf="@+id/fg_me_img_suggestion"
+                android:text="意见反馈" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_right_arrow" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

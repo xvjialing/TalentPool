@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ac_resume_rl">
+
+    <LinearLayout
+        android:id="@+id/item_ll_editBole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/item_img_editBole"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/icon_edit" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="编辑"
+            android:textColor="@color/obj_on" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/item_ll_bole_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_tv_boleNameTitle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="伯乐姓名"/>
+
+            <TextView
+                android:id="@+id/item_tv_boleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="伯乐的名称"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_tv_reliabilityTitle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="关系"/>
+
+            <TextView
+                android:id="@+id/item_tv_reliability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="与伯乐关系"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_tv_phoneNumberTitle"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="联系方式"/>
+
+            <TextView
+                android:id="@+id/item_tv_phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="联系方式"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_img_deleteBole"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        android:clickable="true"/>
+
+</RelativeLayout>

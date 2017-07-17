@@ -1,0 +1,176 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.xvjialing.administrator.talentpool.fg.FragmentConnection">
+
+    <RelativeLayout
+        android:id="@+id/rl_fg_connection_titlebar"
+        style="@style/titleBar"
+        android:gravity="center">
+
+
+        <TextView
+            android:id="@+id/fg_connection_tv_titlebar"
+            style="@style/titleText"
+            android:text="好友"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--搜索框-->
+            <RelativeLayout
+                android:id="@+id/fg_connection_rl_search"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/schedulehead_color"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/search_contact_bg"
+                    android:paddingLeft="10dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/search_icon_contacts" />
+            </RelativeLayout>
+
+            <!--添加联系人-->
+            <LinearLayout
+                android:id="@+id/fg_connection_ll_myFriend"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/item_pressed"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="12.0dip"
+                    android:src="@drawable/friend" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_weight="1.0"
+                    android:text="我的好友"
+                    android:textColor="@color/black"
+                    android:textSize="17.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/icon_right_arrow" />
+            </LinearLayout>
+
+            <!--添加联系人-->
+            <LinearLayout
+                android:id="@+id/fg_connection_ll_addFriend"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/item_pressed"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="12.0dip"
+                    android:src="@drawable/new_contacts_icon" />
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_weight="1.0"
+                    android:text="添加新的联系人"
+                    android:textColor="@color/black"
+                    android:textSize="17.0sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/icon_right_arrow" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <LinearLayout
+                    android:id="@+id/fg_connection_ll_lvTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="推荐好友"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/fg_connection_ll_lvTitle"
+                    android:background="@color/divider"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/fg_connection_ll_lvTitle"
+                    android:background="@color/divider"/>
+            </RelativeLayout>
+
+            <!--联系人列表-->
+            <ListView
+                android:id="@+id/fg_connection_lv_firend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:scrollbars="none"
+                android:divider="@null"
+                android:dividerHeight="3dp"></ListView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.xvjialing.administrator.talentpool.ac.ActivityWishJob">
+
+
+    <RelativeLayout
+        android:id="@+id/ac_wishJob_titlebar"
+        style="@style/titleBar">
+
+        <ImageView
+            android:id="@+id/ac_wishJob_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_left_arrow" />
+
+        <TextView
+            android:id="@+id/ac_wishJob_titletext"
+            style="@style/titleText"
+            android:text="期望工作" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/ac_resume_ll">
+        <TextView
+            android:id="@+id/ac_wishJob_tv_wishJob"
+            style="@style/ac_resume_tv"
+            android:text="期望职位" />
+
+        <EditText
+            android:id="@+id/ac_wishJob_et_wishJob"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_height="40dp"
+            android:background="@null" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/divider"/>
+
+    <LinearLayout
+        style="@style/ac_resume_ll">
+        <TextView
+            android:id="@+id/ac_wishJob_tv_wishLocation"
+            style="@style/ac_resume_tv"
+            android:text="期望地点" />
+
+        <TextView
+            android:id="@+id/ac_wishJob_tv_wishLocation1"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="请选择地点" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/divider"/>
+
+    <LinearLayout
+        style="@style/ac_resume_ll">
+        <TextView
+            android:id="@+id/ac_wishJob_tv_wishMonthSalary"
+            style="@style/ac_resume_tv"
+            android:text="期望月薪" />
+
+        <Spinner
+            android:id="@+id/ac_wishJob_sp_salary"
+            android:layout_width="130dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/divider"/>
+
+    <Button
+        android:id="@+id/ac_wishJob_btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/obj_on"
+        android:text="提交"
+        android:textColor="@color/white"/>
+</LinearLayout>

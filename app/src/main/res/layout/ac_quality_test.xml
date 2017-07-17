@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.xvjialing.administrator.talentpool.ac.ActivityQualityTest">
+
+    <RelativeLayout
+        android:id="@+id/ac_qualityTest_rl_titlebar"
+        style="@style/titleBar">
+
+        <ImageView
+            android:id="@+id/ac_qualityTest_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_left_arrow" />
+
+        <TextView
+            android:id="@+id/ac_qualityTest_tv_titlebar"
+            style="@style/titleText"
+            android:text="素质测评" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/ac_resume_ll">
+
+        <TextView
+            android:id="@+id/ac_qualityTest_tv_skillTest"
+            style="@style/ac_resume_tv"
+            android:text="技能测试" />
+
+        <Spinner
+            android:id="@+id/ac_qualityTest_sp_skillTest"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/ac_qualityTest_tv_skillTest"/>
+
+        <Button
+            android:id="@+id/ac_qualityTest_btn_skillTest"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/radius_rectangle_button"
+            android:text="测试"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/ac_resume_ll">
+
+        <TextView
+            android:id="@+id/ac_qualityTest_tv_comprehensiveSkillsTest"
+            style="@style/ac_resume_tv"
+            android:text="综合测试" />
+
+        <Spinner
+            android:id="@+id/ac_qualityTest_sp_comprehensiveSkillsTest"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/ac_qualityTest_tv_comprehensiveSkillsTest"/>
+
+        <Button
+            android:id="@+id/ac_qualityTest_btn_comprehensiveSkillsTest"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/radius_rectangle_button"
+            android:text="测试"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

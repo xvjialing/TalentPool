@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.xvjialing.administrator.talentpool.ac.ActivityEditProjectExperience">
+
+    <RelativeLayout
+        android:id="@+id/ac_editProjetExperience_rl_titlebar"
+        style="@style/titleBar">
+
+        <ImageView
+            android:id="@+id/ac_editProjetExperience_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_left_arrow" />
+
+        <TextView
+            android:id="@+id/ac_editProjetExperience_tv_titlebar"
+            style="@style/titleText"
+            android:text="项目经历" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ac_editProjetExperience_btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/obj_on"
+        android:text="+添加新的项目经历"
+        android:textColor="@color/white"
+        android:textSize="20sp" android:layout_alignParentBottom="true"/>
+
+    <ListView
+        android:id="@+id/ac_editProjetExperience_lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ac_editProjetExperience_rl_titlebar"
+        android:layout_above="@id/ac_editProjetExperience_btn_add"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:divider="@null"
+        android:dividerHeight="3dp"/>
+
+
+</RelativeLayout>

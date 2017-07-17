@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.xvjialing.administrator.talentpool.ac.ActivityCompanyDetail">
+
+    <RelativeLayout
+        android:id="@+id/ac_companyDetail_rl_titlebar"
+        style="@style/titleBar">
+
+        <ImageView
+            android:id="@+id/ac_companyDetail_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_left_arrow" />
+
+        <TextView
+            android:id="@+id/ac_companyDetail_tv_titlebar"
+            style="@style/titleText"
+            android:text="@string/companyDetail"/>
+        
+        <ImageView
+            android:id="@+id/ac_companyDetail_img_blackList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/black_list" />
+
+
+    </RelativeLayout>
+
+    <com.xvjialing.administrator.talentpool.view.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/ac_companyDetai_img_logo"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:src="@drawable/company" />
+
+                <TextView
+                    android:id="@+id/ac_companyDetail_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toRightOf="@id/ac_companyDetai_img_logo"
+                    android:text="@string/contacts_zhixiang"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ac_companyDetail_tv_name"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/ac_companyDetai_img_logo"
+                    android:orientation="horizontal"
+                    android:paddingLeft="30dp">
+
+                    <TextView
+                        android:id="@+id/ac_companyDetai_tv_industry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/it" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="@string/divider" />
+
+                    <TextView
+                        android:id="@+id/ac_companyDetai_tv_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shanghai" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ac_companyDetail_ll_viewpagerTab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="@color/white"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/id_tab_description_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/guide_round_selector"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dip">
+
+                    <TextView
+                        android:id="@+id/id_description_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/description"
+                        android:textColor="@color/obj_on"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:id="@+id/id_tab_job_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/guide_round_selector"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dip"
+                    android:saveEnabled="false">
+
+                    <TextView
+                        android:id="@+id/id_job_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/position"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:id="@+id/id_tab_evaluate_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/guide_round_selector"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dip">
+
+                    <TextView
+                        android:id="@+id/id_evaluate_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/eveluate"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:id="@+id/id_tab_statistics_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/guide_round_selector"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dip">
+
+                    <TextView
+                        android:id="@+id/id_statistics_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/statistic"
+                        android:textColor="#000000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/id_tab_line_iv"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tab_selected_pressed_holo"
+                android:contentDescription="@string/tab"></ImageView>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/ac_companyDetail_viewpager_content"
+                android:layout_width="match_parent"
+                android:layout_height="700dp"></android.support.v4.view.ViewPager>
+
+        </LinearLayout>
+    </com.xvjialing.administrator.talentpool.view.MyScrollView>
+
+
+
+</LinearLayout>

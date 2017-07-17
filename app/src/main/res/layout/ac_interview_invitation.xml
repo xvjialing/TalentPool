@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.xvjialing.administrator.talentpool.ac.ActivityInterviewInvitation">
+
+    <RelativeLayout
+        android:id="@+id/ac_interviewInvitation_titlebar"
+        style="@style/titleBar">
+
+        <ImageView
+            android:id="@+id/ac_interviewInvitation_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_left_arrow" />
+
+        <TextView
+            android:id="@+id/ac_interviewInvitation_titletext"
+            style="@style/titleText"
+            android:text="@string/interview_invite"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ac_interviewInvitation_ll_noData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/not_found" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="还没有人面试邀请！"
+            android:textColor="@color/obj_on"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!--<ListView-->
+    <!--android:id="@+id/ac_interiewInvitation_lv_interview"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:scrollbars="none"></ListView>-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/ac_interviewInvitation_rl_companyInvitation"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="70dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:background="@drawable/item_pressed"-->
+    <!--android:clickable="true"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:padding="10dp">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/ac_interviewInvitation_img_company"-->
+    <!--android:layout_width="40dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:background="@drawable/company" />-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ac_interestMe_layout"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="15dp"-->
+    <!--android:layout_toRightOf="@id/ac_interviewInvitation_img_company"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/ac_interviewInvitation_tv_jobname"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:ellipsize="marquee"-->
+    <!--android:singleLine="true"-->
+    <!--android:text="职位名称"-->
+    <!--android:textSize="15sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/ac_interviewInvitation_tv_companyName"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:ellipsize="marquee"-->
+    <!--android:singleLine="true"-->
+    <!--android:text="公司名称"-->
+    <!--android:textSize="20sp" />-->
+
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:src="@drawable/icon_right_arrow" />-->
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

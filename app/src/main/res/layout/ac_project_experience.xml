@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.xvjialing.administrator.talentpool.ac.ActivityProjectExperience">
+
+    <RelativeLayout
+        android:id="@+id/ac_projectExperience_rl_titlebar"
+        style="@style/titleBar">
+
+        <ImageView
+            android:id="@+id/ac_projectExperience_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_left_arrow" />
+
+        <TextView
+            android:id="@+id/ac_projectExperience_tv_titlebar"
+            style="@style/titleText"
+            android:text="项目经验"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/ac_resume_ll">
+
+                <TextView
+                    android:id="@+id/ac_resume_projectExperience_tv_projectName"
+                    style="@style/ac_resume_tv"
+                    android:text="项目名称" />
+
+                <EditText
+                    android:id="@+id/ac_resume_projectExperience_et_projectName"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="40dp"
+                    android:background="@null" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/divider"/>
+
+            <LinearLayout
+                style="@style/ac_resume_ll">
+
+                <TextView
+                    android:id="@+id/ac_resume_projectExperience_tv_companyName"
+                    style="@style/ac_resume_tv"
+                    android:text="公司名称" />
+
+                <EditText
+                    android:id="@+id/ac_resume_projectExperience_et_companyName"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="40dp"
+                    android:background="@null" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/divider"/>
+
+            <LinearLayout
+                style="@style/ac_resume_ll">
+
+                <TextView
+                    android:id="@+id/ac_resume_projectExperience_tv_projectRole"
+                    style="@style/ac_resume_tv"
+                    android:text="项目角色" />
+
+                <EditText
+                    android:id="@+id/ac_resume_projectExperience_et_projectRole"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="40dp"
+                    android:background="@null" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/divider"/>
+
+            <RelativeLayout
+                android:id="@+id/ac_resume_projectExperience_rl_editBole"
+                style="@style/ac_resume_ll"
+                android:background="@drawable/item_pressed2"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/ac_resume_projectExperience_tv_reference"
+                    style="@style/ac_resume_tv"
+                    android:text="证明人" />
+
+                <TextView
+                    style="@style/ac_resume_tv"
+                    android:layout_width="85dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="40dp"
+                    android:text="编辑证明人" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/icon_right_arrow" />
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/divider"/>
+
+            <LinearLayout
+                style="@style/ac_resume_ll">
+
+                <TextView
+                    android:id="@+id/ac_resume_projectExperience_tv_Skill"
+                    style="@style/ac_resume_tv"
+                    android:text="所用技能" />
+
+                <EditText
+                    android:id="@+id/ac_resume_projectExperience_et_Skill"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="40dp"
+                    android:background="@null" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/divider"/>
+
+            <LinearLayout style="@style/ac_resume_ll">
+
+                <TextView
+                    android:id="@+id/ac_resume_projectExperience_tv_projectTime"
+                    style="@style/ac_resume_tv"
+                    android:text="项目时间" />
+
+                <TextView
+                    android:id="@+id/ac_resume_projectExperience_tv_startTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="请选择开始时间" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="  ~  " />
+
+                <TextView
+                    android:id="@+id/ac_resume_projectExperience_tv_endTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:text="请选择结束时间" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                style="@style/ac_resume_ll"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ac_resume_projectExperience_tv_projectDescription"
+                    style="@style/ac_resume_tv"
+                    android:text="项目描述" />
+
+                <EditText
+                    android:id="@+id/ac_resume_projectExperience_et_projectDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/text_area"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:maxLines="6"
+                    android:minLines="4"
+                    android:scrollbars="vertical" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/divider"/>
+
+            <Button
+                android:id="@+id/ac_resume_projectExperience_btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/obj_on"
+                android:text="提交"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.xvjialing.administrator.talentpool.ac.ActivitySetting">
+
+    <RelativeLayout
+        android:id="@+id/ac_setting_rl_titlebar"
+        style="@style/titleBar">
+
+        <ImageView
+            android:id="@+id/ac_setting_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_left_arrow" />
+
+        <TextView
+            android:id="@+id/ac_setting_tv_titlebar"
+            style="@style/titleText"
+            android:text="设置"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ac_setting_rl_modifyPassword"
+        style="@style/fg_me_rl"
+        android:background="@drawable/item_pressed"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/item_pressed"
+            android:text="修改密码"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/icon_right_arrow" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/horizontal_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="70dp" />
+
+    <RelativeLayout
+        android:id="@+id/ac_setting_rl_privacy"
+        style="@style/fg_me_rl"
+        android:background="@drawable/item_pressed"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/item_pressed"
+            android:text="隐私设置"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/icon_right_arrow" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/horizontal_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="70dp" />
+
+    <RelativeLayout
+        android:id="@+id/ac_setting_rl_blackList"
+        style="@style/fg_me_rl"
+        android:background="@drawable/item_pressed"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/item_pressed"
+            android:text="黑名单"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/icon_right_arrow" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ac_setting_rl_aboutus"
+        style="@style/fg_me_rl"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/item_pressed"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/item_pressed"
+            android:text="关于我们"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/icon_right_arrow" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/horizontal_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="70dp" />
+
+    <RelativeLayout
+        android:id="@+id/ac_setting_rl_checkupdate"
+        style="@style/fg_me_rl"
+        android:background="@drawable/item_pressed"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="检查更新"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/icon_right_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="40dp"
+            android:text="当前版本为最新版本"
+            android:textColor="@color/gray"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/horizontal_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="70dp" />
+
+    <RelativeLayout
+        android:id="@+id/ac_setting_rl_clearBuffer"
+        style="@style/fg_me_rl"
+        android:background="@drawable/item_pressed"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/item_pressed"
+            android:text="清除缓存"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/ac_setting_btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/item_pressed"
+        android:gravity="center"
+        android:text="退出登陆"
+        android:textColor="@color/obj_on"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

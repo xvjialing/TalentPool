@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.xvjialing.administrator.talentpool.ac.ActivityRemarks">
+
+    <RelativeLayout
+        android:id="@+id/ac_remarks_titlebar"
+        style="@style/titleBar">
+
+        <ImageView
+            android:id="@+id/ac_remarks_img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/icon_left_arrow" />
+
+        <TextView
+            android:id="@+id/ac_remarks_titletext"
+            style="@style/titleText"
+            android:text="备注" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/ac_remarks_et_remarksText"
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text_area"
+        android:gravity="top"
+        android:hint="请填写备注"
+        android:inputType="textMultiLine" />
+
+
+    <Button
+        android:id="@+id/ac_remarks_btn_preservation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/radius_rectangle_button"
+        android:text="保存"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>
