@@ -15,6 +15,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,16 +28,14 @@ import com.xvjialing.administrator.talentpool.bean.ProvinceBean;
 import com.xvjialing.administrator.talentpool.json.AppHttp;
 import com.xvjialing.administrator.talentpool.utils.SharedPreferencesUtils;
 
-import org.androidannotations.annotations.AfterViews;
-import org.androidannotations.annotations.Click;
-import org.androidannotations.annotations.EActivity;
-import org.androidannotations.annotations.ViewById;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.FormBody;
@@ -44,30 +43,45 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
-@EActivity
 public class ActivityCompleteInfo extends AppCompatActivity {
 
-    @ViewById(R.id.ac_completeInfo_et_name)
-    EditText et_name;
-    @ViewById(R.id.ac_completeInfo_rg_sex)
-    RadioGroup rg_sex;
-    @ViewById(R.id.ac_completeInfo_rb_male)
-    RadioButton rb_male;
-    @ViewById(R.id.ac_completeInfo_rb_female)
-    RadioButton rb_female;
-    @ViewById(R.id.ac_completeInfo_et_phoneNumber)
-    EditText et_phoneNumber;
-    @ViewById(R.id.ac_completeInfo_tv_location1)
-    TextView tv_location;
-    @ViewById(R.id.ac_completeInfo_sp_workLength)
-    Spinner sp_workLength;
-    @ViewById(R.id.ac_completeInfo_sp_rencentStatus)
-    Spinner sp_rencentStatus;
-    @ViewById(R.id.ac_completeInfo_btn_submit)
-    Button btn_submit;
     OptionsPickerView pvOptions;
 
     private static final String url = AppHttp.Url_IP + "opensns/index.php?s=/Home/rencai/jiben";
+    @BindView(R.id.ac_completeInfo_titletext)
+    TextView acCompleteInfoTitletext;
+    @BindView(R.id.ac_completeInfo_titlebar)
+    RelativeLayout acCompleteInfoTitlebar;
+    @BindView(R.id.ac_completeInfo_tv_name)
+    TextView acCompleteInfoTvName;
+    @BindView(R.id.ac_completeInfo_et_name)
+    EditText acCompleteInfoEtName;
+    @BindView(R.id.ac_completeInfo_tv_sex)
+    TextView acCompleteInfoTvSex;
+    @BindView(R.id.ac_completeInfo_rb_male)
+    RadioButton acCompleteInfoRbMale;
+    @BindView(R.id.ac_completeInfo_rb_female)
+    RadioButton acCompleteInfoRbFemale;
+    @BindView(R.id.ac_completeInfo_rg_sex)
+    RadioGroup acCompleteInfoRgSex;
+    @BindView(R.id.ac_completeInfo_tv_phoneNumber)
+    TextView acCompleteInfoTvPhoneNumber;
+    @BindView(R.id.ac_completeInfo_et_phoneNumber)
+    EditText acCompleteInfoEtPhoneNumber;
+    @BindView(R.id.ac_completeInfo_tv_location)
+    TextView acCompleteInfoTvLocation;
+    @BindView(R.id.ac_completeInfo_tv_location1)
+    TextView acCompleteInfoTvLocation1;
+    @BindView(R.id.ac_completeInfo_tv_workLength)
+    TextView acCompleteInfoTvWorkLength;
+    @BindView(R.id.ac_completeInfo_sp_workLength)
+    Spinner acCompleteInfoSpWorkLength;
+    @BindView(R.id.ac_resume_basicInfo_tv_rencentStatus)
+    TextView acResumeBasicInfoTvRencentStatus;
+    @BindView(R.id.ac_completeInfo_sp_rencentStatus)
+    Spinner acCompleteInfoSpRencentStatus;
+    @BindView(R.id.ac_completeInfo_btn_submit)
+    Button acCompleteInfoBtnSubmit;
     private OkHttpClient okHttpClient;
     private String userId;
     private String json;
@@ -94,17 +108,23 @@ public class ActivityCompleteInfo extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ac_complete_info);
+        ButterKnife.bind(this);
+
+        radioGroupSet();
+
+        initLocation();
+
+        initWorkList();
+
+        initWorkStatusList();
     }
 
     //    性别设置
-    @AfterViews
     public void radioGroupSet() {
-
-
-        rg_sex.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        acCompleteInfoRgSex.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if (checkedId == rb_male.getId()) {
+                if (checkedId == acCompleteInfoRbMale.getId()) {
                     str_sex = "男";
                 } else {
                     str_sex = "女";
@@ -113,7 +133,6 @@ public class ActivityCompleteInfo extends AppCompatActivity {
         });
     }
 
-    @AfterViews
     public void initLocation() {
         initData();
 
@@ -145,20 +164,19 @@ public class ActivityCompleteInfo extends AppCompatActivity {
                             + options3Items.get(options1).get(option2).get(options3);
                 }
 
-                tv_location.setText(str_location);
+                acCompleteInfoTvLocation1.setText(str_location);
             }
         });
 
     }
 
     //提交
-    @Click(R.id.ac_completeInfo_btn_submit)
     public void clickSubmit() {
-        if (TextUtils.equals("", et_name.getText().toString().trim())) {
+        if (TextUtils.equals("", acCompleteInfoEtName.getText().toString().trim())) {
             Toast.makeText(mContext, "姓名不能为空", Toast.LENGTH_SHORT).show();
-        } else if (TextUtils.equals("", et_phoneNumber.getText().toString())) {
+        } else if (TextUtils.equals("", acCompleteInfoEtPhoneNumber.getText().toString())) {
             Toast.makeText(mContext, "联系电话不能为空", Toast.LENGTH_SHORT).show();
-        } else if (et_phoneNumber.getText().toString().length() != 11) {
+        } else if (acCompleteInfoEtPhoneNumber.getText().toString().length() != 11) {
             Toast.makeText(mContext, "联系电话无效", Toast.LENGTH_SHORT).show();
         } else if (TextUtils.equals("", str_location)) {
             Toast.makeText(mContext, "地址不能为空", Toast.LENGTH_SHORT).show();
@@ -169,7 +187,7 @@ public class ActivityCompleteInfo extends AppCompatActivity {
         } else {
             setSharePreferenceData();
             userId = SharedPreferencesUtils.getParam(mContext, "userId", "") + "";
-            Log.i("workLength11111",str_workLength);
+            Log.i("workLength11111", str_workLength);
             Log.i("fwerwqeqweqweqw", userId);
             new Thread(new Runnable() {
                 @Override
@@ -202,7 +220,7 @@ public class ActivityCompleteInfo extends AppCompatActivity {
                     });
                 }
             }).start();
-            startActivity(new Intent(mContext, ActivityMain_.class));
+            startActivity(new Intent(mContext, ActivityMain.class));
             finish();
         }
 
@@ -210,8 +228,8 @@ public class ActivityCompleteInfo extends AppCompatActivity {
 
     //保存数据
     private void setSharePreferenceData() {
-        str_name = et_name.getText().toString();
-        str_phoneNumber = et_phoneNumber.getText().toString();
+        str_name = acCompleteInfoEtName.getText().toString();
+        str_phoneNumber = acCompleteInfoEtPhoneNumber.getText().toString();
 
         SharedPreferencesUtils.setParam(mContext, "resume_name", str_name);
         SharedPreferencesUtils.setParam(mContext, "resume_sex", str_sex);
@@ -220,11 +238,9 @@ public class ActivityCompleteInfo extends AppCompatActivity {
         SharedPreferencesUtils.setParam(mContext, "resume_workLength", str_workLength);
         SharedPreferencesUtils.setParam(mContext, "resume_recentStatus", str_recentStatus);
 
-        SharedPreferencesUtils.setParam(mContext, "basicInfoTag","1");
+        SharedPreferencesUtils.setParam(mContext, "basicInfoTag", "1");
     }
 
-
-    @Click(R.id.ac_completeInfo_tv_location1)
     public void clickLoCation() {
         //隐藏键盘
         InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
@@ -306,7 +322,6 @@ public class ActivityCompleteInfo extends AppCompatActivity {
         }
     }
 
-    @AfterViews
     public void initWorkList() {
         list.add("2-3年");
         list.add("3-4年");
@@ -316,15 +331,15 @@ public class ActivityCompleteInfo extends AppCompatActivity {
 
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        sp_workLength.setAdapter(adapter);
+        acCompleteInfoSpWorkLength.setAdapter(adapter);
 
-        sp_workLength.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        acCompleteInfoSpWorkLength.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 //SharedPreferencesUtils.setParam(mContext,"resumeWorkLength",adapter.getItem(position).toString());
                 //Log.d("test",adapter.getItem(position).toString());
                 str_workLength = adapter.getItem(position);
-                Log.i("--str_workLength",str_workLength);
+                Log.i("--str_workLength", str_workLength);
             }
 
             @Override
@@ -334,7 +349,6 @@ public class ActivityCompleteInfo extends AppCompatActivity {
         });
     }
 
-    @AfterViews
     public void initWorkStatusList() {
         list2.add("在职，看看新机会");
         list2.add("离职，急需新工作");
@@ -345,9 +359,9 @@ public class ActivityCompleteInfo extends AppCompatActivity {
 
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        sp_rencentStatus.setAdapter(adapter2);
+        acCompleteInfoSpRencentStatus.setAdapter(adapter2);
 
-        sp_rencentStatus.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        acCompleteInfoSpRencentStatus.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 //SharedPreferencesUtils.setParam(mContext,"resumeWorkStatus",adapter2.getItem(position).toString());
@@ -363,22 +377,34 @@ public class ActivityCompleteInfo extends AppCompatActivity {
 
     @Override
     protected void onStart() {
-        et_name.setText(SharedPreferencesUtils.getParam(mContext, "resume_name", "").toString());
+        acCompleteInfoEtName.setText(SharedPreferencesUtils.getParam(mContext, "resume_name", "").toString());
 
         str_location = SharedPreferencesUtils.getParam(mContext, "resume_location", "请选择地址").toString();
 
         if (TextUtils.equals(SharedPreferencesUtils.getParam(mContext, "resume_sex", "男").toString(), "男")) {
-            rg_sex.check(rb_male.getId());
+            acCompleteInfoRgSex.check(acCompleteInfoRbMale.getId());
             str_sex = "男";
         } else {
-            rg_sex.check(rb_female.getId());
+            acCompleteInfoRgSex.check(acCompleteInfoRbFemale.getId());
             str_sex = "女";
         }
 
-        et_phoneNumber.setText(SharedPreferencesUtils.getParam(mContext, "resume_phoneNumber", "").toString());
+        acCompleteInfoEtPhoneNumber.setText(SharedPreferencesUtils.getParam(mContext, "resume_phoneNumber", "").toString());
 
-        tv_location.setText(SharedPreferencesUtils.getParam(mContext, "resume_location", "请选择地点").toString());
+        acCompleteInfoTvLocation1.setText(SharedPreferencesUtils.getParam(mContext, "resume_location", "请选择地点").toString());
 
         super.onStart();
+    }
+
+    @OnClick({R.id.ac_completeInfo_tv_location1, R.id.ac_completeInfo_btn_submit})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.ac_completeInfo_tv_location1:
+                clickLoCation();
+                break;
+            case R.id.ac_completeInfo_btn_submit:
+                clickSubmit();
+                break;
+        }
     }
 }

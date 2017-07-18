@@ -66,7 +66,7 @@ public class ActivityStartPage extends AppCompatActivity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-                Intent intent = new Intent(ActivityStartPage.this,ActivityLogin_.class);
+                Intent intent = new Intent(ActivityStartPage.this,ActivityLogin.class);
                 startActivity(intent);
                 finish();
             }

@@ -5,9 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.xvjialing.administrator.talentpool.R;
 
-import org.androidannotations.annotations.EActivity;
-
-@EActivity
 public class ActivityBlackList extends AppCompatActivity {
 
     @Override

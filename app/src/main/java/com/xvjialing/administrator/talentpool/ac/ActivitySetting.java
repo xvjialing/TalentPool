@@ -70,7 +70,7 @@ public class ActivitySetting extends AppCompatActivity {
 
     @Click(R.id.ac_setting_btn_logout)
     public void logout() {
-        startActivity(new Intent(ActivitySetting.this, ActivityLogin_.class));
+        startActivity(new Intent(ActivitySetting.this, ActivityLogin.class));
         finish();
     }
 

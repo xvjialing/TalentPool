@@ -23,22 +23,24 @@
         android:launchMode="singleTask"
         android:screenOrientation="portrait"
         android:theme="@style/AppTheme">
-        <activity android:name=".ac.ActivityLogin_" />
+        <activity android:name=".ac.ActivityLogin" />
         <activity
-            android:name=".ac.ActivityMain_"
+            android:name=".ac.ActivityMain"
             android:windowSoftInputMode="adjustPan" />
-        <activity android:name=".ac.ActivityRegister_" />
-        <activity android:name=".ac.ActivityResume_" >
+        <activity android:name=".ac.ActivityRegister" />
+        <activity android:name=".ac.ActivityResume" >
 
         </activity>
-        <activity android:name=".ac.ActivityJobDetail_" />
-        <activity android:name=".ac.ActivityCompanyDetail_" />
-        <activity android:name=".ac.ActivityResumeBasicInfo_" />
+        <activity android:name=".ac.ActivityJobDetail"
+            android:launchMode="singleTask"/>
+        <activity android:name=".ac.ActivityCompanyDetail"
+            android:launchMode="singleTask"/>
+        <activity android:name=".ac.ActivityResumeBasicInfo" />
         <activity
-            android:name=".ac.ActivityResumeWorkExperience_"
+            android:name=".ac.ActivityResumeWorkExperience"
             android:windowSoftInputMode="stateVisible|adjustPan" />
-        <activity android:name=".ac.ActivityInterviewInvitation_" />
-        <activity android:name=".ac.ActivityStartPage_">
+        <activity android:name=".ac.ActivityInterviewInvitation" />
+        <activity android:name=".ac.ActivityStartPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -46,43 +48,43 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ac.ActivityProjectExperience_"
+            android:name=".ac.ActivityProjectExperience"
             android:windowSoftInputMode="stateVisible|adjustPan" />
-        <activity android:name=".ac.ActivityWishJob_" />
-        <activity android:name=".ac.ActivityEducateExperience_" />
-        <activity android:name=".ac.ActivityRecentVisitor_" />
-        <activity android:name=".ac.ActivityInterestMe_" />
-        <activity android:name=".ac.ActivityDeliverFeedbak_" />
-        <activity android:name=".ac.ActivitySetting_" />
-        <activity android:name=".ac.ActivityMailList_" />
-        <activity android:name=".ac.ActivitySearchFriend_" />
-        <activity android:name=".ac.ActivityQualityTest_" />
-        <activity android:name=".ac.ActivityCompleteInfo_" />
-        <activity android:name=".ac.ActivitySearchJob_" />
-        <activity android:name=".ac.ActivitySystemMessage_" />
-        <activity android:name=".ac.ActivityFirstInterviewTest_" />
-        <activity android:name=".ac.ActivityRemarks_" />
-        <activity android:name=".ac.ActivitySkillTest_" />
-        <activity android:name=".ac.ActivityComprehensiveSkillsTest_" />
+        <activity android:name=".ac.ActivityWishJob" />
+        <activity android:name=".ac.ActivityEducateExperience" />
+        <activity android:name=".ac.ActivityRecentVisitor" />
+        <activity android:name=".ac.ActivityInterestMe" />
+        <activity android:name=".ac.ActivityDeliverFeedbak" />
+        <activity android:name=".ac.ActivitySetting" />
+        <activity android:name=".ac.ActivityMailList" />
+        <activity android:name=".ac.ActivitySearchFriend" />
+        <activity android:name=".ac.ActivityQualityTest" />
+        <activity android:name=".ac.ActivityCompleteInfo" />
+        <activity android:name=".ac.ActivitySearchJob" />
+        <activity android:name=".ac.ActivitySystemMessage" />
+        <activity android:name=".ac.ActivityFirstInterviewTest" />
+        <activity android:name=".ac.ActivityRemarks" />
+        <activity android:name=".ac.ActivitySkillTest" />
+        <activity android:name=".ac.ActivityComprehensiveSkillsTest" />
         <activity
-            android:name=".ac.ActivitySuggestion_"
+            android:name=".ac.ActivitySuggestion"
             android:windowSoftInputMode="stateVisible|adjustPan" />
-        <activity android:name=".ac.ActivityJobCollection_" />
+        <activity android:name=".ac.ActivityJobCollection" />
         <activity android:name=".ac.ActivityModifyPassword_" />
-        <activity android:name=".ac.ActivityPrivacy_" />
-        <activity android:name=".ac.ActivityBlackList_" />
-        <activity android:name=".ac.ActivityAboutUs_" />
-        <activity android:name=".ac.ActivityBanner_" />
-        <activity android:name=".ac.ActivityEditEducateExperience_" />
-        <activity android:name=".ac.ActivityEditProjectExperience_" />
-        <activity android:name=".ac.ActivityEditWorkExperience_" />
-        <activity android:name=".ac.ActivityAddBole_" />
-        <activity android:name=".ac.ActivityEditBole_" />
-        <activity android:name=".ac.ActivityFriend_" />
-        <activity android:name=".ac.ActivityFeedback_" />
-        <activity android:name=".ac.ActivityFriendSetting_" />
-        <activity android:name=".ac.ActivityMyFriend_" />
-        <activity android:name=".ac.ActivitySendMessage_" />
+        <activity android:name=".ac.ActivityPrivacy" />
+        <activity android:name=".ac.ActivityBlackList" />
+        <activity android:name=".ac.ActivityAboutUs" />
+        <activity android:name=".ac.ActivityBanner" />
+        <activity android:name=".ac.ActivityEditEducateExperience" />
+        <activity android:name=".ac.ActivityEditProjectExperience" />
+        <activity android:name=".ac.ActivityEditWorkExperience" />
+        <activity android:name=".ac.ActivityAddBole" />
+        <activity android:name=".ac.ActivityEditBole" />
+        <activity android:name=".ac.ActivityFriend" />
+        <activity android:name=".ac.ActivityFeedback" />
+        <activity android:name=".ac.ActivityFriendSetting" />
+        <activity android:name=".ac.ActivityMyFriend" />
+        <activity android:name=".ac.ActivitySendMessage" />
 
 
     </application>
